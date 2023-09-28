@@ -8,7 +8,7 @@ This module provides an interactive display option for the ACC plot.
 :copyright: (c) 2015-2018 by Instituto de Telecomunicacoes
 :license: BSD 3-clause, see LICENSE for more details.
 
-"""
+
 
 
 # Imports
@@ -494,3 +494,4 @@ def plot_acc(ts=None, raw=None, vm=None, sm=None, spectrum=None, path=None):
 
     # tkinter main loop
     mainloop()
+"""
