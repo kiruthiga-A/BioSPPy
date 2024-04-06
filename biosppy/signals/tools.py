@@ -20,6 +20,7 @@ import six
 import sys
 import numpy as np
 from scipy import signal as ss
+from scipy import signal
 from scipy import interpolate, optimize
 from scipy.stats import stats
 
@@ -225,7 +226,7 @@ def _get_window(kernel, size, **kwargs):
     ]:
         winfunc = ss.general_gaussian
     elif kernel in ["boxcar", "box", "ones", "rect", "rectangular"]:
-        winfunc = ss.boxcar
+        winfunc = signal.boxcar
     elif kernel in ["slepian", "slep", "optimal", "dpss", "dss"]:
         winfunc = ss.slepian
     elif kernel in ["cosine", "halfcosine"]:
