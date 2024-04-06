@@ -16,7 +16,7 @@ from six.moves import range
 
 # 3rd party
 import numpy as np
-import scipy.signal as ss
+from scipy import signal as ss
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 
@@ -25,7 +25,7 @@ from . import tools as st
 from .. import plotting, utils
 
 
-def ppg(signal=None, sampling_rate=1000., show=True):
+def ppg(signal=None, sampling_rate=1000., show=False):
     """Process a raw PPG signal and extract relevant signal features using
     default parameters.
 

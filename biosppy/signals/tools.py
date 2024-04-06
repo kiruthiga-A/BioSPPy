@@ -19,7 +19,7 @@ import six
 # 3rd party
 import sys
 import numpy as np
-import scipy.signal as ss
+from scipy import signal as ss
 from scipy import interpolate, optimize
 from scipy.stats import stats
 
